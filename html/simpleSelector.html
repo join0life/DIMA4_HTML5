@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단순선택자의 예</title>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(4, 4, 104);
+        }
+
+        /* 특이값 : 11 */
+        p.test {
+            background-color: rgb(182, 255, 204);
+        }
+
+        /* 특이값 : 10 */
+        .one {
+            background-color: bisque;
+        }
+
+        /* 특이값 : 101 */
+        p#two {
+            /* 현재 글씨 크기의 1.5배 */
+            font-size: 1.5em;
+
+        }
+
+        #two,
+        .three {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>단순선택자의 예</h2>
+    <p class="one">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Pariatur sint, ullam doloribus in eligendi totam explicabo.
+        Aspernatur possimus asperiores, at nesciunt,
+        veniam corporis excepturi eos dolor laboriosam atque, ab a.
+    </p>
+    <p class="three">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Pariatur sint, ullam doloribus in eligendi totam explicabo.
+        Aspernatur possimus asperiores, at nesciunt,
+        veniam corporis excepturi eos dolor laboriosam atque, ab a.
+    </p>
+    <p class="one test">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Pariatur sint, ullam doloribus in eligendi totam explicabo.
+        Aspernatur possimus asperiores, at nesciunt,
+        veniam corporis excepturi eos dolor laboriosam atque, ab a.
+    </p>
+    <p id="two">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Pariatur sint, ullam doloribus in eligendi totam explicabo.
+        Aspernatur possimus asperiores, at nesciunt,
+        veniam corporis excepturi eos dolor laboriosam atque, ab a.
+    </p>
+</body>
+
+</html>
